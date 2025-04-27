@@ -1,0 +1,31 @@
+/* style.css */
+
+/* 1. Custom background color for the header */
+header {
+    background-color: #0066cc; /* Dark blue */
+  }
+  
+  /* 2. Custom font size for h2 elements */
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333333;
+  }
+  
+  /* 3. Custom style navbar links */
+  .nav-link {
+    color: #0066cc;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #004080;
+  }
+  
+  /* 4. Custom padding and background for the main content */
+  main {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
