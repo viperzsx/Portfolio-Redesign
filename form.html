@@ -3,25 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
-
-  <!-- Bootstrap CSS -->
+  <title>Form - My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body style="font-family: 'Poppins', sans-serif;">
 
-  <!-- Header -->
   <header class="bg-primary text-white text-center p-4">
-    <h1>My Portfolio</h1>
+    <h1>Multi-Step Form</h1>
   </header>
 
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">Logo</a>
@@ -41,44 +33,49 @@
     </div>
   </nav>
 
-  <!-- Main Content Area -->
   <main class="container my-5">
-    <div class="row">
-      <div class="col-md-8">
-        <h2>Welcome to My Site</h2>
-        <p>This is the home page. More content coming soon...</p>
-        
-        <!-- Bootstrap card (new addition)-->
-         <div class="card mt-4">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Image">
-            <div class="card-body">
-                <h5 class="card-title">Project Title</h5>
-                <p class="card-text">This is a brief description of the project.</p>
-                <a href="projects.html" class="btn btn-primary">View Project</a>
-            </div>
-         </div>
+    <h2>Sign Up Form</h2>
+
+    <form id="regForm" action="thankyou.html">
+      <div class="tab">Name:
+        <p><input placeholder="First name..." oninput="this.className = ''"></p>
+        <p><input placeholder="Last name..." oninput="this.className = ''"></p>
       </div>
-      <div class="col-md-4">
-        <!-- Bootstrap Component (Toast Notification) -->
-        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <strong class="me-auto">New Update</strong>
-            <small>Just now</small>
-          </div>
-          <div class="toast-body">
-            Thanks for visiting my portfolio!
-          </div>
+      <div class="tab">Contact Info:
+        <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+        <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+      </div>
+      <div class="tab">Birthday:
+        <p><input placeholder="dd" oninput="this.className = ''"></p>
+        <p><input placeholder="mm" oninput="this.className = ''"></p>
+        <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+      </div>
+      <div class="tab">Login Info:
+        <p><input placeholder="Username..." oninput="this.className = ''"></p>
+        <p><input placeholder="Password..." oninput="this.className = ''"></p>
+      </div>
+
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
         </div>
       </div>
-    </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
   </main>
 
-  <!-- Footer -->
   <footer class="bg-dark text-white text-center p-3">
     <p>&copy; 2025 My Portfolio. All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
