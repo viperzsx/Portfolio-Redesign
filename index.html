@@ -42,22 +42,35 @@
   </nav>
 
   <!-- Main Content Area -->
+    <!-- Main Content Area -->
   <main class="container my-5">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-md-8">
-        <h2>Welcome to My Site</h2>
-        <p>This is the home page. More content coming soon...</p>
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Victor Diaz — a passionate Computer Information Systems student, front-end enthusiast, and PC builder. I’ve developed projects using HTML, CSS, Python, and Bootstrap, and I’m currently working toward a career in tech support and web development. I love turning ideas into interactive websites and building functional apps with clean design.
+        </p>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">More About Me</button>
         
-        <!-- Bootstrap card (new addition)-->
-         <div class="card mt-4">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Image">
-            <div class="card-body">
-                <h5 class="card-title">Project Title</h5>
-                <p class="card-text">This is a brief description of the project.</p>
-                <a href="projects.html" class="btn btn-primary">View Project</a>
+        <!-- Modal -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="aboutModalLabel">Background & Goals</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                I’ve built multiple projects including a BattleBots salary negotiation game in Python, and I’ve designed clean, responsive portfolio sites using Bootstrap 5. I’m committed to continuous learning and want to apply my skills in a help desk or junior web dev role.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
+
       <div class="col-md-4">
         <!-- Bootstrap Component (Toast Notification) -->
         <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
@@ -71,7 +84,64 @@
         </div>
       </div>
     </div>
+
+    <!-- Skills Section -->
+    <section class="mb-5">
+      <h3 class="text-center mb-4">My Skills</h3>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="border p-3 rounded shadow-sm bg-light">HTML5 & CSS3</div>
+        </div>
+        <div class="col-md-3">
+          <div class="border p-3 rounded shadow-sm bg-light">Bootstrap</div>
+        </div>
+        <div class="col-md-3">
+          <div class="border p-3 rounded shadow-sm bg-light">Python</div>
+        </div>
+        <div class="col-md-3">
+          <div class="border p-3 rounded shadow-sm bg-light">Communication</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Preview Cards -->
+    <section>
+      <h3 class="text-center mb-4">Project Highlights</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="pythonlogo.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">BattleBot Python Game</h5>
+              <p class="card-text">A negotiation game using modular Python where players manage mercenary salaries and loot splits.</p>
+              <a href="projects.html" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="bootstraplogo.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap Portfolio Site</h5>
+              <p class="card-text">A responsive multi-page portfolio built with Bootstrap, including modals, forms, and a slideshow.</p>
+              <a href="projects.html" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="htmlcss.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">LED & Audio Website</h5>
+              <p class="card-text">An e-commerce-style site for car electronics inspired by Sylvania Automotive, built using HTML/CSS.</p>
+              <a href="projects.html" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-3">
